@@ -1,5 +1,5 @@
 namespace PaintPricingEngine.Pricing;
 public interface IPricecalculator
 {
-    public PriceBreakdown EstimateLaborCost(CostInput input);
+    public PriceBreakdown CalculateLaborCost(CostInput input);
 }

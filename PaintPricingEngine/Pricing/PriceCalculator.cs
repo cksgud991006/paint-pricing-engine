@@ -2,7 +2,7 @@ namespace PaintPricingEngine.Pricing;
 
 public class PriceCalculator: IPricecalculator
 {
-    public PriceBreakdown EstimateLaborCost(CostInput input)
+    public PriceBreakdown CalculateLaborCost(CostInput input)
     {
         var baseLaborRatePerSqft = input.LaborCost.BaseHourlyRate * input.LaborCost.LaborCostPerSqft;
         var totalRatePerSqft = baseLaborRatePerSqft + input.PaintCost.PaintCostPerSqft;
